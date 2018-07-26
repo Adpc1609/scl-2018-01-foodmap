@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    font-family: 'Denk One', sans-serif;
+}
+.cabecera{
+    text-align: center;
+    color:rgba(247, 94, 39, 0.651);
+    padding-top: 50px;
+}
+h1{
+    font-size: 40px;
+}
+#map{
+    width:400px;
+    height:400px;
+    background:yellow
+}

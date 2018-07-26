@@ -1,0 +1,27 @@
+body{
+    height: 50%;
+    margin: 0;
+    font-family: 'Denk One', sans-serif;
+    background-color:black;
+}
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:rgba(247, 94, 39, 0.651);
+}
+
+hr {
+    background-color: white;
+}
+
+h1{
+    font-size: 90px;
+}
+#map{
+    width:400px;
+    height:400px;
+    background:yellow
+}
