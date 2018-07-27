@@ -1,9 +1,8 @@
 var map;
 var infowindow;
-var busqueda = ['cafe','bakery','restaurant','meal_takeaway','meal_takeaway','meal_delivery '];
 
 
- function initMap()
+ function initMap(commerceType)
  {
  // Creamos un mapa con las coordenadas actuales
    navigator.geolocation.getCurrentPosition(function(pos) {
@@ -27,8 +26,8 @@ var busqueda = ['cafe','bakery','restaurant','meal_takeaway','meal_takeaway','me
    // Especificamos la localización, el radio y el tipo de lugares que queremos obtener
    var request = {
      location: myLatlng,
-     radius: 5000,
-     types: ['meal_takeaway'],
+     radius: 4000,
+     types: [commerceType],
      key: 'AIzaSyA6WgRywAc99hocbaMPBOXHCYkkGIZ9Flc'
    };
 
@@ -58,4 +57,11 @@ var busqueda = ['cafe','bakery','restaurant','meal_takeaway','meal_takeaway','me
      infowindow.setContent(place.name);
      infowindow.open(map, this);
    });
+   }
+
+   function commerceType(){
+    let busqueda = document.getElementById("opciones").value;
+    console.log(busqueda);
+    initMap(busqueda);   
+
    }

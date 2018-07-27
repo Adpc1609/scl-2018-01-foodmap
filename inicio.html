@@ -30,13 +30,12 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <select class="custom-select" required>
-                        <option value="">Busca cerca de ti</option>
-                        <option value="1">Cafe</option>
-                        <option value="2">Panaderia</option>
-                        <option value="3">Resturantes</option>
-                        <option value="4">Comida para llevar</option>
-                        <option value="5">Comida con Delivery</option>
+                    <select id="opciones" onchange="commerceType()"class="custom-select" required>
+                        <option value="cafe">Cafe</option>
+                        <option value="bakery">Panaderia</option>
+                        <option value="restaurant">Resturantes</option>
+                        <option value="meal_takeaway">Comida para llevar</option>
+                        <option value="meal_delivery">Comida con Delivery</option>
                     </select>
                 </div>
             </div>
