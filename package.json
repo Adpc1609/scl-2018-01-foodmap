@@ -1,0 +1,23 @@
+{
+  "name": "scl-2018-01-foodmap",
+  "version": "1.0.0",
+  "description": "Proyecto Foodmap",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha chai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adpc1609/scl-2018-01-foodmap.git"
+  },
+  "author": "Adriana Perez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adpc1609/scl-2018-01-foodmap/issues"
+  },
+  "homepage": "https://github.com/Adpc1609/scl-2018-01-foodmap#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
